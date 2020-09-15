@@ -17,17 +17,29 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func AddAnimalToArray(_ sender: Any) {
-        var animal = animalTextField.text!
+        let animal = animalTextField.text!
         
         
         // MARK: - 1️⃣ emojiArray  الي  animal قم باضافه متغير
+        var emojiArray : String
+        if animal == "قطه" {
+            emojiArray.append("🐱")
+        }
+        else if animal == "اسد" {
+            emojiArray.append("🦁")
+        }
+        else if animal == "دلفين" {
+            emojiArray.append("🐬")
+        }
         
-        
-        
-        
-        
-        
-        
+        else if animal == "كلب" {
+            
+            emojiArray.append("🐶")
+        }
+        else {
+            emojiArray.append("❔")
+        }
+        emojiArray.removeAll()
         // MARK: - لا تقم بتغيير هذا السطر⚠️⚠️
         animalTextField.text = ""
         animalEmojiLabel.text = ""

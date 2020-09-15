@@ -68,3 +68,5 @@ else {
     print("راسب")
 }
 
+print("***\t*****")
+print("*  *\t*\n*\n*")
