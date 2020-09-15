@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         
         // MARK: - 1️⃣ emojiArray  الي  animal قم باضافه متغير
-        var emojiArray : String
+        var emojiArray : [String] = [] 
         if animal == "قطه" {
             emojiArray.append("🐱")
         }
